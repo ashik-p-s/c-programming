@@ -1,8 +1,5 @@
-# c-programming
+# C-Programming
 Collection of low-level C projects including Address Book, MP3 Tag Reader, Steganography, Lexical Analyzer, Source to HTML converter.
-# C Programming & Low-Level Utilities
-
-A collection of core low-level C projects demonstrating system-level logic, custom data structures, file parsing, and memory management.
 
 ## Projects Included
 
