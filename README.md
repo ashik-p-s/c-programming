@@ -15,6 +15,6 @@ A collection of core low-level C projects demonstrating system-level logic, cust
 | **Source2HTML** | A C-based application that reads and parses C source code files, converts them into styled HTML documents, and highlights different programming elements using predefined colors and optional line numbers[cite: 16]. | C Programming, File Handling (`fopen`, `fgetc`, `fputc`, `fprintf`, `fclose`), State-Event Based Parsing, Finite State Machines, Token Identification, HTML Generation, CSS Styling[cite: 16]. |
 
 ## Tech Stack
-* **Language:** C / C++
+* **Language:** C 
 * **Environment:** Linux / WSL (Ubuntu)
 * **Build Tool:** GNU Make / GCC
