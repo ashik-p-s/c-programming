@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { background-color: #000000; color: #FFFFFF; font-family: monospace; }
+.line-num { color: #888888; padding-right: 15px; user-select: none; }
+</style>
+</head>
+<body>
+<pre>
+<span class="line-num">   1 </span><span style="color:orange">#include</span> &lt;stdio.h&gt;
+<span class="line-num">   2 </span><span style="color:orange">#include</span> &lt;stdlib.h&gt;
+<span class="line-num">   3 </span>
+<span class="line-num">   4 </span><span style="color:grey">/* Multi-line comment block
+   Testing line breaks &amp; HTML escaping: 5 &lt; 10 &amp;&amp; 10 &gt; 2
+*/</span>
+<span class="line-num">   5 </span>
+<span class="line-num">   6 </span><span style="color:grey">// Single-line comment: checking #preprocessor inside comment handling</span>
+<span class="line-num">   7 </span>
+<span class="line-num">   8 </span><span style="color:orange">#define</span> MAX_BUFFER <span style="color:purple">1024</span>
+<span class="line-num">   9 </span><span style="color:orange">#define</span> MESSAGE <span style="color:green">"Hello, World!\n"</span>
+<span class="line-num">  10 </span>
+<span class="line-num">  11 </span><span style="color:blue">struct</span> Student {
+<span class="line-num">  12 </span>    <span style="color:blue">int</span> id;
+<span class="line-num">  13 </span>    <span style="color:blue">float</span> gpa;
+<span class="line-num">  14 </span>};
+<span class="line-num">  15 </span>
+<span class="line-num">  16 </span><span style="color:blue">int</span> main(<span style="color:blue">int</span> argc, <span style="color:blue">char</span> *argv[]) {
+<span class="line-num">  17 </span>    <span style="color:grey">// Numeric constants (integers, floats, decimals)</span>
+<span class="line-num">  18 </span>    <span style="color:blue">int</span> count = <span style="color:purple">42</span>;
+<span class="line-num">  19 </span>    <span style="color:blue">float</span> pi = <span style="color:purple">3.14159</span>;
+<span class="line-num">  20 </span>    
+<span class="line-num">  21 </span>    <span style="color:grey">// Character and string literals with quotes &amp; escapes</span>
+<span class="line-num">  22 </span>    <span style="color:blue">char</span> letter = <span style="color:green">'A'</span>;
+<span class="line-num">  23 </span>    <span style="color:blue">char</span> escaped_char = <span style="color:green">'\''</span>;
+<span class="line-num">  24 </span>    <span style="color:blue">char</span> *text = <span style="color:green">"Testing string with \"escaped quotes\" and HTML tags: &lt;html&gt;"</span>;
+<span class="line-num">  25 </span>
+<span class="line-num">  26 </span>    <span style="color:grey">// Keyword, identifier, and operator checks</span>
+<span class="line-num">  27 </span>    <span style="color:blue">if</span> (count &gt; <span style="color:purple">0</span> &amp;&amp; pi &lt; <span style="color:purple">5.0</span>) {
+<span class="line-num">  28 </span>        printf(<span style="color:green">"Count: %d, Pi: %f\n"</span>, count, pi);
+<span class="line-num">  29 </span>    } <span style="color:blue">else</span> {
+<span class="line-num">  30 </span>        printf(<span style="color:green">"Condition failed!\n"</span>);
+<span class="line-num">  31 </span>    }
+<span class="line-num">  32 </span>
+<span class="line-num">  33 </span>    <span style="color:grey">// Checking dynamic memory allocation keywords</span>
+<span class="line-num">  34 </span>    <span style="color:blue">struct</span> Student *s = (<span style="color:blue">struct</span> Student *)malloc(<span style="color:blue">sizeof</span>(<span style="color:blue">struct</span> Student));
+<span class="line-num">  35 </span>    <span style="color:blue">if</span> (s != NULL) {
+<span class="line-num">  36 </span>        s-&gt;id = <span style="color:purple">101</span>;
+<span class="line-num">  37 </span>        s-&gt;gpa = <span style="color:purple">3.85</span>;
+<span class="line-num">  38 </span>        free(s);
+<span class="line-num">  39 </span>    }
+<span class="line-num">  40 </span>
+<span class="line-num">  41 </span>    <span style="color:blue">return</span> <span style="color:purple">0</span>;
+<span class="line-num">  42 </span>}</pre>
+</body>
+</html>
